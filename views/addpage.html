@@ -1,6 +1,7 @@
 {% extends "layout.html" %}
 
 {% block content %}
+<!-- FIXME -->
   <h3>Add a Page</h3>
   <hr>
   <form method="POST" action="/wiki/">
@@ -17,9 +18,9 @@
 
     PLACEHOLDER FOR CONTENT TEXTAREA FIELD
     Content
-    <input type='text' name='content'>
+    <textarea class="form-control" rows="5" name='content'></textarea>
     PLACEHOLDER FOR TAGS INPUT FIELD
-    <input type='text' name='tags'>
+    <input type = "text" name='tags'>
     <button type="submit" class="btn btn-primary">submit</button>
   </form>
 {% endblock %}
